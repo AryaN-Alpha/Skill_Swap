@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+ 
+ .div_main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+ }
+
+ .div_m1 {
+    height: 100vh;
+    width: 800px;
+    margin-bottom: 0;
+    background-image: url(pic8.jpg);
+    background-size: auto 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+ }
+
+ .div_m11 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    margin-left: 20px;
+    color: whitesmoke;
+ }
+ 
+ .div_m12 {
+    margin-top: 640px;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: whitesmoke;
+ }
+
+ .div_m2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    flex-wrap: wrap;
+ }
+
+ #signup {
+    margin-left: 460px;
+    margin-top: 150px;
+ }
+
+ .email_field,
+ .pass_field,
+ .fname_field,
+ .lname_field {
+    width: 400px;
+    height: 45px;
+    margin-left: 320px;
+    border: 2px solid;
+    border-radius: 22px;
+ }
+
+ .submit_btn {
+    height: 40px;
+    width: 160px;
+    text-align: center;
+    align-items: center;
+    border-radius: 25px;
+    margin-left: 450px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: bolder;
+ }
+
+ .text2 {
+    text-align: center;
+    align-items: center;
+    font-size: small;
+    margin-left: 330px;
+ }
+
+ /* ────────────── 📱 MEDIA QUERY FOR TABLETS ────────────── */
+ @media (max-width: 1024px) {
+    .div_m1 {
+        width: 100%;
+        height: 50vh;
+        background-size: cover;
+    }
+
+    .div_m2 {
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #signup {
+        margin: 40px auto;
+    }
+
+    .fname_field,
+    .lname_field,
+    .email_field,
+    .pass_field {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .submit_btn {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .text2 {
+        margin-left: 0;
+    }
+ }
+
+ /* ─── MEDIA QUERY FOR MOBILE PHONES ─── */
+
+ 
+ @media (max-width: 600px) {
+    .div_m11, .div_m12 {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+
+    #signup {
+        font-size: 24px;
+    }
+
+    .fname_field,
+    .lname_field,
+    .email_field,
+    .pass_field {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .submit_btn {
+        width: 140px;
+        height: 38px;
+        font-size: small;
+    }
+
+    .text2 {
+        font-size: x-small;
+    }
+ }
+ #ss
+{
+    white-space: pre-wrap;
+    align-items: center;
+    margin-left: 300px;
+    margin-top: 150px;
+}
+#tlg
+{
+    white-space: pre-wrap;
+    margin-top: -200px;
+
+}
+
+/* Same  issues as in login */
+
+    </style>
+    <title>Signup Page</title>
+</head>
+<body>
+    <div class="div_main">
+        <div class="div_m1">
+            <div class="div_m11">
+                <h4 id="ss">Skill<br>   Swap</h4>
+            </div>
+            <div class="div_m12">
+                <h4 id="tlg">                         Teach  -  Learn  -  Grow</h4>
+            </div>
+        </div>
+
+        <div class="div_m2">
+            <h2 id="signup">Signup</h2>
+            <div>
+                <form name="signup_form" onsubmit="alert('Signup successful!')">
+                    <input type="text" class="fname_field" name="fname" placeholder="First Name"><br><br>
+                    <input type="text" class="lname_field" name="lname" placeholder="Last Name"><br><br>
+                    <input type="email" class="email_field" name="email" placeholder="Email Address"><br><br>
+                    <input type="password" class="pass_field" name="pass" placeholder="Password"><br><br>
+                    <input type="submit" class="submit_btn" value="Signup"><br><br>
+                    <p class="text2">If you are having any trouble please contact<br>
+                    <a href="#">support@Skillswap.com</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
