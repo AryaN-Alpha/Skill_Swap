@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #dbeafe, #fef3c7);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contactus {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 40px 60px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 500px;
+      width: 90%;
+    }
+
+    .contactus h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .contactus p {
+      font-size: 18px;
+      margin: 10px 0;
+      color: #444;
+    }
+    .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: beige;
+  padding: 15px 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar-brand a,
+.navbar-links a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand a:hover,
+.navbar-links a:hover {
+  color: #4a90e2; /* subtle blue hover */
+}
+
+.navbar-brand a::after,
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #4a90e2;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.navbar-brand a:hover::after,
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 25px;
+}
+
+  </style>
+</head>
+<body>
+    <nav class="navbar">
+  <div class="navbar-brand">
+    <a href="index.html">Skill Swap</a>
+  </div>
+  <div class="navbar-links">
+    <a href="index.html">Home</a>
+    <a href="Courses_Section.html">Our Services</a>
+    <a href="assignment.html">Assignments</a>
+    <a href="learningTools.html">Learning Tools</a>
+    <a href="contact.html">Contact</a>
+    <a href="login_page.html">Login</a>
+    <a href="signup_page.html">Signup</a>
+  </div>
+</nav>
+
+  <div class="contactus">
+    <h2>Contact Us</h2>
+    <p><strong>Email:</strong> support@example.com</p>
+    <p><strong>Phone:</strong> +1 234 567 890</p>
+    <p><strong>Address:</strong> 1234 Street Name, City, Country</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,229 @@
+:root {
+      --primary: #3498db;
+      --bg: #fdfdfd;
+      --accent: #ecf0f3;
+      --text: #222;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(to right, #dbeafe, #fef3c7);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* Navbar updated styles */
+  
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin: 20px 0 40px;
+    }
+
+    .assignment-box {
+      background-color: #92ecd6;
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .assignment-title {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .assignment-meta {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .assignment-desc {
+      font-size: 16px;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    textarea, input[type="file"] {
+      width: 100%;
+      font-size: 16px;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      resize: vertical;
+      background-color: #fff;
+    }
+
+    button {
+      padding: 12px 20px;
+      font-size: 16px;
+      background-color: #e9b581;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 0 auto;
+      display: block;
+      width: auto;
+    }
+    
+
+    button:hover {
+      background-color: #ad8359;
+    }
+
+    @media (max-width: 768px) {
+     
+
+      .assignment-box {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+    }
+
+    .form-btn{
+
+      background-color: #e9b581;
+      color: white;
+      padding: 14px;
+      border: none;
+      border-radius: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+     .form-btn:hover {
+      background-color: #c59463;
+    }
+       :root {
+            --primary: #3b82f6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            font-weight: 500;
+            position: relative;
+        }
+
+        a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary);
+            bottom: -2px;
+            left: 0;
+            transition: width 0.3s;
+        }
+
+        a:hover::after {
+            width: 100%;
+        }
+
+        .section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: beige;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+
+        .section1-2 {
+            display: flex;
+            gap: 25px;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background-color: black;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                padding: 20px;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .section1-2 {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                flex-direction: column;
+                background-color: beige;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+                padding: 20px;
+                gap: 15px;
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease;
+            }
+
+            .section1-2.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .section1-2 a {
+                padding: 10px 0;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            }
+
+            .section1-2 a:last-child {
+                border-bottom: none;
+            }
+        }

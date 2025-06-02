@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Course</title>
+    <link rel="stylesheet" href="Styling/Teach_Course.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Add New Course</h1>
+            <p>Create and publish a new course for students</p>
+        </div>
+        
+        <div class="form-container">
+            <form id="courseForm" method="POST" action="backend/Teach_Course.php">               
+                  <div class="form-group">
+                    <label>Course Category <span class="required">*</span></label>
+                    <div class="category-grid">
+                        <div class="category-option">
+                            <input type="radio" name="category" id="web-dev" value="Web Development" required>
+                            <label for="web-dev" class="category-label">Web Development</label>
+                        </div>
+                        <div class="category-option">
+                            <input type="radio" name="category" id="data-science" value="Data Science" required>
+                            <label for="data-science" class="category-label">Data Science</label>
+                        </div>
+                        <div class="category-option">
+                            <input type="radio" name="category" id="design" value="Design" required>
+                            <label for="design" class="category-label">Design</label>
+                        </div>
+                        <div class="category-option">
+                            <input type="radio" name="category" id="marketing" value="Marketing" required>
+                            <label for="marketing" class="category-label">Marketing</label>
+                        </div>
+                        <div class="category-option">
+                            <input type="radio" name="category" id="business" value="Business" required>
+                            <label for="business" class="category-label">Business</label>
+                        </div>
+                    </div>
+                </div>                               
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="id">Course ID <span class="required">*</span></label>
+                        <input type="number" name="id" id="id" required min="1">
+                        <div class="input-hint">Unique identifier for the course</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="title">Course Title <span class="required">*</span></label>
+                        <input type="text" name="title" id="title" required placeholder="Enter course title">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Course Description <span class="required">*</span></label>
+                    <textarea name="description" id="description" required placeholder="Provide a detailed description of the course content, objectives, and what students will learn..."></textarea>
+                    <div class="input-hint">Detailed description helps students understand the course value</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="image">Course Image URL</label>
+                    <input type="text" name="image" id="image"  placeholder="https://example.com/image.jpg">
+                    <div class="input-hint">High-quality image (800x600px recommended)</div>
+                </div>
+
+              
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">Add Course</button>
+                </div>
+            </form>
+        </div>
+    </div>
+<script src="Scripting/Teach_Course.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Note Taking App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="Styling/notes.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="section-navbar">
+    <div class="section1-1">
+      <a href="index.html">Skill Swap</a>
+    </div>
+    <div class="section1-2">
+      <a href="index.html">Home</a>
+      <a href="Courses_Section.html">Our Services</a>
+      <a href="assignment.html">Assignments</a>
+      <a href="learningTools.html">Learning Tools</a>
+      <a href="#">Contact</a>
+      <a href="login_page.html">Login</a>
+      <a href="signup_page.html">Signup</a>
+    </div>
+  </div>
+
+  <!-- Note Taking Section -->
+  <div class="container">
+    <form method="POST" action="backend/notes.php">
+      <h1>My Notes</h1>
+      <textarea name="description" placeholder="Write your text here...."></textarea>
+      <input type="submit" name="submit" value="Save Note">
+    </form>
+    <form method="GET" action="backend/show_notes.php">
+       <input type="submit" name="submit" value="Show Note">
+    </form>
+  </div>
+</body>
+</html>

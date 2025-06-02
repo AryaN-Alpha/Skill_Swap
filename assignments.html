@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Assignments</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Styling/assignments.css">
+</head>
+<body>
+
+  <div class="section">
+        <div class="section1-1">
+            <a href="#">Online Lessons</a>
+        </div>
+        
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <div class="section1-2">
+            <a href="index.html">Home</a>
+            <a href="Courses_Section.html">Our Services</a>
+            <a href="assignments.html">Assignments</a>
+            <a href="learningTools.html">Learning Tools</a>
+            <a href="contact.html">Contact</a>
+            <a href="login_page.html">Login</a>
+            <a href="signup_page.html">Signup</a>
+        </div>
+    </div>
+
+
+  <h1>Course Assignments</h1>
+
+  <form method="POST" action="backend/save_assignmnets.php">
+  <!-- Data Science Assignment -->
+  <div class="assignment-box">
+    <div class="assignment-title">📊 Data Science: Customer Churn Prediction</div>
+    <div class="assignment-meta">Due: June 10, 2025</div>
+    <div class="assignment-desc">
+      Build a logistic regression model to predict customer churn using a telecom dataset. Explain your feature selection process and evaluate your model.
+    </div>
+    <textarea placeholder="Type your answer or summary here..." name="course"></textarea>
+    <input type="submit" name="submit" value="submission"  class="form-btn">
+  </div>
+  </form>
+  <!-- Information Security Assignment -->
+  <form method="POST" action="backend/save_assignmnets.php">
+  <div class="assignment-box">
+    <div class="assignment-title">🔐 Information Security: Secure Authentication Design</div>
+    <div class="assignment-meta">Due: June 12, 2025</div>
+    <div class="assignment-desc">
+      Design a secure authentication system for a mobile banking app. Include multi-factor authentication and discuss session management.
+    </div>
+    <textarea placeholder="Type your authentication design here..." name="course"></textarea>
+    <input type="submit" name="submit" value="submission" class="form-btn">
+  </div>
+</form>
+  <!-- UI/UX Masterclass Assignment -->
+     <form method="POST" action="backend/save_assignmnets.php">
+  <div class="assignment-box">
+    <div class="assignment-title">🎨 UI/UX Masterclass: Improve Checkout Flow</div>
+    <div class="assignment-meta">Due: June 15, 2025</div>
+    <div class="assignment-desc">
+      Redesign an e-commerce checkout page focusing on simplicity, accessibility, and conversion optimization. Describe key changes and show wireframes if possible.
+    </div>
+    <textarea placeholder="Explain your redesign approach here..." name="course"></textarea>
+    <input type="submit" name="submit" value="submission" class="form-btn">
+  </div>
+</form>
+  <script src="backend/Courses_Section.php"></script>
+
+</body>
+</html>
