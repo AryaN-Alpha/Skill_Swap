@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 // Check if user is logged in
 if (!isset($_SESSION['user_logged_in']) || $_SESSION['user_logged_in'] !== true) {
     // User is not logged in, redirect to login page
-    header("Location: login_page.html");
+    header("Location: ../login_page.html");
     exit;
 }
 // User is logged in, you can access their data:

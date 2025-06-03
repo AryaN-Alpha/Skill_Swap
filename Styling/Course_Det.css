@@ -1,7 +1,7 @@
     :root {
             --primary-bg: #f5f0e5;
             --secondary-bg: #ffffff;
-            --accent-color: #7c6e59;
+            --accent-color: #63533b;
             --text-color: #333333;
             --highlight-color: #d4c9b6;
             --border-color: #e6dcc6;
@@ -161,4 +161,6 @@
                 font-size: 1.7rem;
             }
         }
- 
+ a{
+    text-decoration: none;
+ }

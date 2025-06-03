@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styling/Courses_Section.css">
     <title>EduLearn - Online Courses</title>
-    
+
 </head>
+
 <body>
     <div class="section">
         <div class="section1-1">
             <a href="index.html">Skill Swap</a>
         </div>
-        
+
         <div class="hamburger" onclick="toggleMenu()">
             <span></span>
             <span></span>
             <span></span>
         </div>
-        
+
         <div class="section1-2">
             <a href="index.html">Home</a>
             <a href="Courses_Section.html">Our Services</a>
             <a href="assignments.html">Assignments</a>
             <a href="learningTools.html">Learning Tools</a>
             <a href="contact.html">Contact</a>
-            <a href="login_page.html">Login</a>
-            <a href="signup_page.html">Signup</a>
+            <a href="login_page.html" id="login-link">Login</a>
+            <a href="signup_page.html" id="signup-link">Signup</a>
+            <a href="#" id="logout-link" style="display:none;">Logout</a>
         </div>
     </div>
-    
+
     <main>
         <section class="hero">
             <div class="container">
                 <h1>Expand Your Knowledge With Our Courses</h1>
                 <p><b>Learn & Teach Skills</b></p>
-                
+
                 <div class="search-bar">
                     <input type="text" placeholder="Search for courses...">
                     <button>Search</button>
                 </div>
-                
+
                 <div class="filters">
                     <button class="filter-btn active">All Categories</button>
                     <button class="filter-btn">Web Development</button>
@@ -51,24 +54,23 @@
                 </div>
             </div>
         </section>
-        
 
 
-        
+
+
         <section class="courses-section">
-            <div class="container">    
+            <div class="container">
                 <div id="courses-container" class="course-grid">
                     <!-- Course cards will be inserted here dynamically -->
                 </div>
             </div>
         </section>
-       <a href="Teach_Course.html">
-        <div class="filter-box">
-        <button class="filter-button">Teach Course</button>
-        </div>  
+        <a href="Teach_Course.html">
+            <div class="filter-box">
+                <button class="filter-button">Teach Course</button>
+            </div>
         </a>
     </main>
-    
 
 
 
@@ -77,14 +79,15 @@
 
 
 
- <footer>
+
+    <footer>
         <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>EduLearn</h3>
+                    <h3>Skill Swap</h3>
                     <p>Quality education accessible to everyone. Join thousands of students learning with us.</p>
                 </div>
-                
+
                 <div class="footer-section">
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
@@ -94,7 +97,7 @@
                         <li><a href="#">Pricing</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
                     <h3>Help & Support</h3>
                     <ul class="footer-links">
@@ -104,7 +107,7 @@
                         <li><a href="#">Terms of Service</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
                     <h3>Connect With Us</h3>
                     <ul class="footer-links">
@@ -115,13 +118,14 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="copyright">
                 <p>&copy; 2025 EduLearn. All rights reserved.</p>
             </div>
         </div>
     </footer>
-<script src="Scripting/Courses_Section.js"></script>
-  
+    <script src="Scripting/Courses_Section.js"></script>
+    <script src="Scripting/navbar.js"></script>
 </body>
+
 </html>

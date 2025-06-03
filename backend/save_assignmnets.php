@@ -17,7 +17,7 @@ if(isset($_POST["submit"]))
         echo "ERROR";
     }
     else{
-        echo "<script>alert('Message inserted into Database!');</script>";
+        header('location: ../assignments.html');
     }
     $result=mysqli_query($connection, "SELECT * from assignments");
     while($row=mysqli_fetch_assoc($result))

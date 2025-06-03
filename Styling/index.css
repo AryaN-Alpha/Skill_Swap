@@ -136,7 +136,7 @@
       flex-wrap: wrap;
       min-height: 100vh;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
       background: linear-gradient(to right, #dbeafe, #fef3c7);
       padding: 60px 40px;
     }

@@ -138,3 +138,77 @@
       color: #7c5cc0;
     }
 
+/* Tablet and smaller: Stack vertically */
+@media (max-width: 1024px) {
+  html, body {
+    height: auto;
+    overflow-y: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .left-panel {
+    height: 35vh;
+    min-height: 250px;
+    width: 100%;
+  }
+
+  .right-panel {
+    height: auto;
+    padding: 4vh 5vw;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 2.5vh;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  .submit_btn {
+    width: 90%;
+  }
+
+  .support-text {
+    font-size: 1.6vh;
+  }
+}
+
+/* Phones: Hide image and fully center form */
+@media (max-width: 600px) {
+  .left-panel {
+    display: none;
+  }
+
+  .container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-panel {
+    width: 100vw;
+    padding: 6vh 6vw;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 2.2vh;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  .submit_btn {
+    width: 95%;
+  }
+
+  .support-text {
+    font-size: 1.5vh;
+    text-align: center;
+  }
+}
