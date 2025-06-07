@@ -9,6 +9,17 @@
       background: linear-gradient(to right, #dbeafe, #fef3c7);
       
     }
+    a::after {
+    content: '' !important;
+    position: absolute !important;
+    width: 0 !important;
+    height: 2px !important;
+    background-color: var(--primary) !important;
+    bottom: -2px !important;
+    left: 0 !important;
+    transition: width 0.3s !important;
+}
+
     .container{
       height: 100vh;
       display: flex;
