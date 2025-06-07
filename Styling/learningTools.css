@@ -1,16 +1,4 @@
- @font-face {
-        font-family: "Inter";
-        src: url("fonts/Inter-Regular.woff2") format("woff2");
-        font-weight: 400;
-        font-style: normal;
-      }
 
-      @font-face {
-        font-family: "Inter";
-        src: url("fonts/Inter-SemiBold.woff2") format("woff2");
-        font-weight: 600;
-        font-style: normal;
-      }
 
       :root {
         --primary: #3498db;
@@ -27,12 +15,13 @@
 
       html,
       body {
+        
         height: 100%;
         margin: 0;
       }
 
       body {
-        font-family: "Inter", sans-serif;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
