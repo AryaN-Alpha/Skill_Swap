@@ -152,6 +152,7 @@
   .wrapper {
     flex-direction: column-reverse;
     margin-left: 0px;
+  padding-right: 20px;
   }
 }
     .h1-heading {
